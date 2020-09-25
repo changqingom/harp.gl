@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { DecodedTile } from "@here/harp-datasource-protocol";
 import { TileKey } from "@here/harp-geoutils";
 import { LoggerManager } from "@here/harp-utils";
 
@@ -23,8 +22,6 @@ export abstract class BaseTileLoader implements ITileLoader {
     error?: Error;
 
     payload?: ArrayBufferLike | {};
-
-    decodedTile?: DecodedTile;
 
     protected m_priority: number = 0;
 
